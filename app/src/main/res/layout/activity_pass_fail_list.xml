@@ -1,0 +1,41 @@
+<!-- table_row_layout.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_margin="20dp">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passListTable">
+        <TableRow>
+
+    <!-- Student Name -->
+    <TextView
+        android:id="@+id/textViewStudentName"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Student Name"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_margin="10dp"/>
+
+    <!-- Final Score -->
+
+
+    <!-- Pass/Fail Status -->
+    <TextView
+        android:id="@+id/textViewPassFail"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Pass/Fail"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    </TableRow>
+    </TableLayout>
+</RelativeLayout>

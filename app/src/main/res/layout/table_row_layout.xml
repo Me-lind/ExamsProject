@@ -1,0 +1,33 @@
+<!-- table_row_layout.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_margin="20dp">
+
+    <!-- Define your table row structure here -->
+    <TableRow>
+        <!-- Contents of each table row -->
+        <TextView
+            android:id="@+id/textViewStudentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="10dp"/>
+
+        <!-- Other elements for each row -->
+        <!-- Example: TextView for Pass/Fail status -->
+        <TextView
+            android:id="@+id/textViewPassFail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pass/Fail"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="10dp"/>
+    </TableRow>
+</RelativeLayout>

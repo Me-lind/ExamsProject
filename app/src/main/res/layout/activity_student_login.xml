@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentLogin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STUDENT LOGIN"
+        android:id="@+id/labelStudentLogin"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you a student? Login below"
+        android:layout_below="@+id/labelStudentLogin"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/labelStudentQn"/>
+
+    <EditText
+        android:id="@+id/studentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/labelStudentQn"
+        android:background="@drawable/input_border"
+        android:paddingStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:hint="Student email address"
+        android:textColorHint="@color/black"
+        />
+    <EditText
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:id="@+id/studentPassword"
+        android:background="@drawable/input_border"
+        android:paddingStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/studentEmail"
+        android:inputType="textPassword"
+        />
+    <CheckBox
+        android:id="@+id/showPasswordCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:layout_below="@id/studentPassword"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/btnStudentLogin"
+        android:background="@drawable/background_button"
+        android:layout_below="@+id/studentPassword"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

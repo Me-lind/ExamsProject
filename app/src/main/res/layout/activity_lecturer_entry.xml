@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lecturerEntry"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LECTURER ENTRY"
+        android:id="@+id/labelTop"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Student"
+        android:layout_below="@+id/labelTop"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/labelSelect"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSelect"
+        android:layout_marginTop="15dp"
+        android:id="@+id/studentSpinner"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER COURSE"
+        android:layout_below="@+id/studentSpinner"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/labelLecCourse"/>
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:id="@+id/courseSelection"
+        android:layout_below="@+id/labelLecCourse"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_border"
+        android:paddingStart="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAT MARKS"
+        android:textStyle="bold"
+        android:layout_below="@+id/assignment2"
+        android:layout_marginTop="15dp"
+        android:id="@+id/labelCat"/>
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:hint="CAT 1"
+        android:id="@+id/cat1"
+        android:background="@drawable/input_border"
+        android:paddingStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/labelCat"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:hint="CAT 2"
+        android:id="@+id/cat2"
+        android:background="@drawable/input_border"
+        android:paddingStart="8dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_below="@+id/cat1"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ASSIGNMENT MARKS"
+        android:textStyle="bold"
+        android:layout_below="@+id/courseSelection"
+        android:layout_marginTop="15dp"
+        android:id="@+id/labelAssignmentMarks"/>
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:hint="Assignment 1"
+        android:id="@+id/assignment1"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/input_border"
+        android:paddingStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/labelAssignmentMarks"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:hint="Assignment 2"
+        android:id="@+id/assignment2"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/input_border"
+        android:paddingStart="8dp"
+        android:layout_below="@+id/assignment1"
+        android:layout_marginTop="10dp"
+        android:inputType="number"/>
+    <TextView
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:text="FINAL EXAM SCORE"
+    android:textStyle="bold"
+    android:layout_below="@+id/cat2"
+    android:layout_marginTop="15dp"
+    android:id="@+id/labelFinal"/>
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:id="@+id/exams"
+        android:hint="Final Exam Score"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/input_border"
+        android:paddingStart="8dp"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/labelFinal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE DETAILS"
+        android:id="@+id/submitMarks"
+        android:background="@drawable/background_button"
+        android:layout_below="@+id/exams"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

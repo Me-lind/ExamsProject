@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditMarks"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDIT STUDENT MARKS"
+        android:id="@+id/labelEditMarks"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelEditMarks"
+        android:text="Select student"
+        android:id="@+id/labelSelect"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSelect"
+        android:id="@+id/spinnerStudent"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        android:id="@+id/labelYear"
+        android:textStyle="bold"
+        android:layout_below="@+id/spinnerStudent"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/fetchYear"
+        android:textStyle="bold"
+        android:layout_below="@+id/spinnerStudent"
+        android:layout_toRightOf="@+id/labelYear"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester"
+        android:id="@+id/labelSemester"
+        android:textStyle="bold"
+        android:layout_below="@+id/labelYear"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/fetchSemester"
+        android:textStyle="bold"
+        android:layout_below="@+id/labelYear"
+        android:layout_toRightOf="@+id/labelSemester"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayoutEditMarks"
+        android:layout_below="@+id/labelSemester"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the courses you want to edit marks for:"
+            android:id="@+id/labelEditSelection"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelEditSelection"
+            android:id="@+id/edtCourse1"
+            android:text="Course 1"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtCourse1"
+            android:id="@+id/edtCourse2"
+            android:text="Course 2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtCourse2"
+            android:id="@+id/edtCourse3"
+            android:text="Course 2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtCourse3"
+            android:id="@+id/edtCourse4"
+            android:text="Course 2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtCourse4"
+            android:id="@+id/edtCourse5"
+            android:text="Course 2"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

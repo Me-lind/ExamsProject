@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentRegistration">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+    <TextView
+        android:id="@+id/labelStudentRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="STUDENT REGISTRATION"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/labelStudentRegistration"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_border"
+        android:paddingStart="8dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="13dp"
+        android:hint="Student Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/edtStudentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edtStudentName"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_border"
+        android:paddingStart="8dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="13dp"
+        android:hint="Email address"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/edtStudentRegNo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edtStudentEmail"
+        android:background="@drawable/input_border"
+        android:paddingStart="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="13dp"
+        android:hint="Registration Number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        />
+    <EditText
+        android:id="@+id/edtStudentPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edtStudentRegNo"
+        android:background="@drawable/input_border"
+        android:inputType="textPassword"
+        android:paddingStart="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter password"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        />
+        <CheckBox
+            android:id="@+id/showPasswordCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Password"
+            android:layout_below="@id/edtStudentPassword"
+            android:checked="false" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1"
+        android:layout_below="@+id/showPasswordCheckBox">
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select academic year:"
+            android:textStyle="bold"
+            android:id="@+id/labelAcademicYear"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select semester"
+            android:textStyle="bold"
+            android:id="@+id/labelSemester"
+            android:layout_marginLeft="20dp"
+            />
+        </TableRow>
+        <TableRow>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelAcademicYear"
+                android:id="@+id/spinnerAcademicYear"
+                android:entries="@array/academicyear"/>
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelSemester"
+                android:id="@+id/spinnerSemester"
+                android:entries="@array/semester"
+               />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter five courses for this semester"
+        android:id="@+id/labelCoursesSelection"
+        android:layout_below="@+id/tableLayout1"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        android:layout_below="@+id/labelCoursesSelection">
+        <TableRow>
+            <EditText
+                android:layout_height="48dp"
+                android:layout_width="150dp"
+                android:background="@drawable/input_border"
+                android:paddingStart="8dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/edtCourse1"
+                android:hint="Course1"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_height="48dp"
+                android:layout_width="150dp"
+                android:background="@drawable/input_border"
+                android:paddingStart="8dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/edtCourse2"
+                android:hint="Course2"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+
+                />
+
+
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:layout_height="48dp"
+                android:layout_width="150dp"
+                android:background="@drawable/input_border"
+                android:paddingStart="8dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/edtCourse3"
+                android:hint="Course3"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_height="48dp"
+                android:layout_width="150dp"
+                android:background="@drawable/input_border"
+                android:paddingStart="8dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/edtCourse4"
+                android:hint="Course4"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                />
+
+
+        </TableRow>
+
+        <TableRow android:layout_height="70dp">
+
+            <EditText
+                android:id="@+id/edtCourse5"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_border"
+                android:hint="Course5"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:paddingStart="8dp" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:id="@+id/btnRegisterStudent"
+        android:background="@drawable/background_button"
+        android:text="REGISTER"
+        android:layout_below="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>
+</ScrollView>
+
+
+

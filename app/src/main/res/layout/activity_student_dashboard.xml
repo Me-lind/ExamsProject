@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentDashboard"
+    android:layout_margin="20dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STUDENT PAGE"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="100dp"
+        android:id="@+id/labelStudentPage"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="STUDENT DETAILS:"
+        android:id="@+id/labelStudentDetails"
+        android:layout_below="@+id/labelStudentPage"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Name: "
+        android:id="@+id/labelStudentName"
+        android:layout_below="@+id/labelStudentDetails"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/studentName"
+        android:layout_below="@+id/labelStudentDetails"
+        android:layout_toRightOf="@+id/labelStudentName"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Registration Number: "
+        android:id="@+id/labelStudentReg"
+        android:layout_below="@+id/labelStudentName"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Registration Number"
+        android:id="@+id/studentReg"
+        android:layout_below="@+id/labelStudentName"
+        android:layout_toRightOf="@+id/labelStudentReg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Academic Year: "
+        android:id="@+id/labelYear"
+        android:layout_below="@+id/labelStudentReg"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Year"
+        android:id="@+id/studentYear"
+        android:layout_below="@+id/labelStudentReg"
+        android:layout_toRightOf="@+id/labelYear"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester: "
+        android:id="@+id/labelSemester"
+        android:layout_below="@+id/labelYear"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Semester"
+        android:id="@+id/studentSemester"
+        android:layout_below="@+id/labelYear"
+        android:layout_toRightOf="@+id/labelSemester"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/labelSemester"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelCourses"
+            android:text="COURSES REGISTERED"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/course1"
+            android:hint="Course 1"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/labelCourses"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/course2"
+            android:hint="Course 2"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/course1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/course3"
+            android:hint="Course 3"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/course2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/course4"
+            android:hint="Course 4"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/course3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/course5"
+            android:hint="Course 5"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/course4"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
